@@ -41,7 +41,7 @@ int verificarSobreposicao(int tabuleiro[TAMANHO_TABULEIRO][TAMANHO_TABULEIRO],
     return (tabuleiro[linha][coluna] != VALOR_AGUA);
 }
 
-// Funções para posicionar navios (mantidas do nível anterior)
+// Funções para posicionar navios
 int posicionarNavioHorizontal(int tabuleiro[TAMANHO_TABULEIRO][TAMANHO_TABULEIRO], 
                              int linha, int coluna, int tamanho) {
     if (coluna + tamanho > TAMANHO_TABULEIRO) return 0;
@@ -100,7 +100,7 @@ void criarHabilidadeCruz(Habilidade *hab) {
     }
 }
 
-// Função para criar matriz de habilidade em formato de Octaedro (Losango)
+// Função para criar matriz de habilidade em formato de Octaedro
 void criarHabilidadeOctaedro(Habilidade *hab) {
     sprintf(hab->nome, "Octaedro");
     int centro = TAMANHO_HABILIDADE / 2;
